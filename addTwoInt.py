@@ -2,10 +2,11 @@
 
 import sys
 
-print(sys.argv)
+def add(a, b):
+    a = int( sys.argv[1] )
+    b = int( sys.argv[2] )
+    return 0
 
-a = int( sys.argv[1] )
-b = int( sys.argv[2] )
-
-print("variable 1 = ", a , " variable 2 = " , b)
+if __name__=="__main__":
+    print(sys.argv)
 
