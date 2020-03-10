@@ -8,5 +8,10 @@ def add(a, b):
     return 0
 
 if __name__=="__main__":
-    print(sys.argv)
+    if (len(sys.argv) > 3):
+        print ("Erreur, entrez que 2 variables, svp!")
+    elif (len(sys.argv) < 3):
+        print("Erreur, entrez que 2 variables, svp!")
+    else:
+        print( sys.argv)
 
