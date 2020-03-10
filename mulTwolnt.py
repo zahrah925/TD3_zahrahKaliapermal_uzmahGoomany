@@ -8,4 +8,9 @@ def mul(x, y):
     return 0
 
 if __name__=="__main__":
-    print(sys.argv)
+    if (len(sys.argv) < 3):
+        print("Erreur! Veuillez inserer 2 valeurs.")
+    elif (len(sys.argv) > 3):
+        print("Erreur! Veuillez inserer que 2 valeurs.")
+    else:
+        print(sys.argv)
